@@ -1,0 +1,75 @@
+<!DOCTYPE html> 
+<html> 
+      
+<head> 
+
+</head> 
+  
+<body> 
+    <h1 style="color: green"> 
+        Check console for bounds
+    </h1> 
+ 
+
+  
+    <script type="text/javascript"> 
+        var obj = {
+  
+  "frameworklayout" : [
+    {    "text":"" ,
+        "bounds":"[0,0][1440,2392]"
+    },
+    {    "text":"" ,
+        "bounds":"[0,84][1440,2322]"
+    },
+    {    "text":"Welcome to" ,
+        "bounds":"[536,858][905,951]"
+    },
+    {    "text":"ClassEngage" ,
+        "bounds":"[516,951][925,1044]"
+    },
+    {    "text":"Login via OTP" ,
+        "bounds":"[549,1104][892,1180]"
+    },
+    {    "text":"" ,
+        "bounds":"[144,1272][481,1413]"
+    },
+    {    "text":"US + 1" ,
+        "bounds":"[172,1300][369,1385]"
+    },
+    {    "text":"Phone Number" ,
+        "bounds":"[499,1264][1345,1422]"
+    },
+    {    "text":"Continue" ,
+        "bounds":"[95,1468][1345,1636]"
+    },
+    {    "text":"Signin via email" ,
+        "bounds":"[549,1685][891,1751]"
+    },
+    {    "text":"I'm a Faculty" ,
+        "bounds":"[468,1948][972,2099]"
+    },
+    {    "text":"By joining our app, you agree to our" ,
+        "bounds":"[298,2190][1142,2256]"
+    },
+    {    "text":"Terms of Service" ,
+        "bounds":"[537,2256][904,2322]"
+    },
+    ]
+}
+
+var i;
+
+for (i = 0; i < Object.keys(obj.frameworklayout).length; i++) {
+   var arr= JSON.stringify(obj.frameworklayout[i].bounds.split("[").join("")
+    .split("]"));
+    console.log(arr)
+
+
+    
+}
+ 
+    </script> 
+</body> 
+  
+</html>
